@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   height: 100%;
   width: 100%;
+  background-color: aliceblue;
 }
 
 nav {
@@ -19,10 +20,44 @@ nav {
   align-items: center;
 }
 
+h1{
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-left: 100px;
+  margin-bottom: 5px;
+}
+
+span{
+  color: rgb(253, 83, 5);
+}
+
+p{
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 100px;
+  margin-bottom: 8px;
+}
+
+button{
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
 .name {
   color: rgb(233, 79, 7);
   font-size: 2.5rem;
-  margin-left: 12px;
+  margin-left: 20px;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -57,8 +92,39 @@ ul li:hover {
 
 .main-container {
   display: flex;
+  height: 87%;
 }
 
 img {
-  height: 40%;
+  height: 70%;
+  filter: brightness(90%);
+}
+
+.left-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#pattern{
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+.icons{
+  margin-left: 100px;
+}
+
+i{
+  margin-right: 8px;
+  cursor: pointer;
 }
