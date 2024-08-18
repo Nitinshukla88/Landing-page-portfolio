@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+body {
   height: 100%;
   width: 100%;
   background-color: aliceblue;
@@ -14,10 +14,13 @@ html, body {
 
 nav {
   height: 70px;
-  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+li i{
+  color: black;
 }
 
 h1{
@@ -49,6 +52,7 @@ button{
   width: 100px;
   border-radius: 5px;
   border: 1px solid black;
+  background-color: rgb(219, 232, 247);
   margin-left: 100px;
   margin-bottom: 50px;
   cursor: pointer;
@@ -116,7 +120,7 @@ img {
 
 #pattern{
   position: absolute;
-  left: 35%;
+  left: 33%;
   top: 25%;
 }
 
@@ -124,8 +128,18 @@ img {
   margin-left: 100px;
 }
 
-i{
+.icons i{
   margin-right: 8px;
   cursor: pointer;
+  color: black;
+}
+
+.dark-theme{
+  background-color: black;
+  color: white;
+}
+
+.normal-theme{
+  background-color: aliceblue;
   color: black;
 }

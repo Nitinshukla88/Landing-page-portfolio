@@ -17,6 +17,7 @@
             <li>Experience</li>
             <li>Services</li>
             <li>Hire me</li>
+            <li onclick="flip()"><i class="fa-solid fa-moon fa-xl switch"></i></li>
         </ul>
     </nav>
     <section>
@@ -26,9 +27,9 @@
                 <p>This is my official portfolio website to showcase my all works related to web development and UI design</p>
                 <button>Download CV</button>
                 <div class="icons">
-                    <a href="https://x.com/nitin__twts"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
-                    <a href="https://www.linkedin.com/in/nitin-shukla-463730259/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-                    <a href="https://www.instagram.com/nitin._im/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://x.com/nitin__twts"><i class="fa-brands fa-x-twitter fa-2xl icon"></i></a>
+                    <a href="https://www.linkedin.com/in/nitin-shukla-463730259/"><i class="fa-brands fa-linkedin-in fa-2xl icon"></i></a>
+                    <a href="https://www.instagram.com/nitin._im/"><i class="fa-brands fa-instagram fa-2xl icon"></i></a>
                 </div>
             </div>
             <div class="right-cont">
@@ -37,5 +38,33 @@
             </div>
         </div>
     </section>
+    <script>
+        let curr = "moon";
+        let ele = document.querySelector(".switch");
+        let icons = document.querySelectorAll(".icon");
+        function flip(){
+            if(curr == "moon"){
+                ele.classList.remove("fa-moon")
+                ele.classList.add("fa-sun");
+                curr = "sun"
+                document.body.classList.remove("normal-theme");
+                document.body.classList.add("dark-theme");
+                ele.style.color = "white";
+                for(i = 0; i < icons.length; i++){
+                    icons[i].style.color = "white";
+                }
+            }else{
+                ele.classList.remove("fa-sun");
+                ele.classList.add("fa-moon");
+                curr = "moon";
+                document.body.classList.remove("dark-theme");
+                document.body.classList.add("normal-theme");
+                ele.style.color = "black";
+                for(j = 0; j < icons.length; j++){
+                    icons[j].style.color = "black";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
